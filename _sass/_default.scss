@@ -5,7 +5,7 @@ body {
     font-weight: $font-weight-base;
     font-size: $font-size-base;
     line-height: $lineheight-base;
-    background-color: $body-bg;
+    background-color: white;
     color: $body-color;
 }
 
@@ -17,12 +17,16 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-weight: $font-weight-light;
     font-size: 4rem;
-    color: $color-grey-2;
+    color: $clientcolor-1;
+    font-size: 34px;
 }
 h2 {
     font-weight: $font-weight-light;
     font-size: 2rem;
     margin: 2rem 0 1rem;
+    font-size: 24px;
+    color: $clientcolor-1;
+    
 }
 h3, h4, h5, h6 {
     font-size: 1rem;
@@ -30,22 +34,21 @@ h3, h4, h5, h6 {
 }
 a {
     text-decoration: none;
-    color: $body-link;
-    border-bottom: dotted 1px $body-link;
+    color: $clientcolor-1;
     &:hover{
         color: $body-link;
         text-decoration: none;
-        border-bottom: solid 1px $body-link;
     }
     &:active{
         background-color: $body-link;
         color: $color-white;
     }
     &:focus{}
+    &:focus{}
 }
 blockquote {
     padding-left: 24px;
-    border-left: 2px solid $mycolor-5;
+    border-left: 2px solid $color-white;
 }
 
 // ongeordende lijstjes met een ander symbool of kleur
@@ -58,7 +61,7 @@ main ul {
     text-indent: -25px;
     &:before {
         content:'\2022';
-        color: $mycolor-5;
+        color: none;
         margin-right: 18px;
     }    
   }
@@ -88,13 +91,163 @@ main ol {
     }
   }
 
+  //aanpassingen Mirte//
+
+
 //forms 
 button, a.btn {
-    
-    &:hover{}
-    &:active{}
+    color: white;
+    background-color: $clientcolor-1;
+    border: $clientcolor-1;
+    border-radius: .25rem;
+    &:hover{
+        background-color: #2E3D83;
+    }
+    &:active{
+        background-color: rgb(64, 81, 158);
+         border: $clientcolor-1;
+    }
     &:focus{}
 }
 input[type=text], textarea {
 
+    //Tables
+.table thead th{
+    background-color: #2E3D83;
+    color: white;
+}
+
+}
+
+//images
+.tweecol{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+ }
+
+ .tweecol1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+ }
+
+ .driecol{
+     width: 100%;
+ }
+ .witbeeld{
+     width:100%
+ }
+ .col-6>img{
+     margin-bottom: 40px;
+     margin-top: 40px;
+ }
+
+ //content
+.content{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 200px;;
+}
+.content-block{
+    margin-bottom: 80px;
+}
+.align-bottom{
+    display: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px;
+}
+.colors{
+    ul{
+        color: white;
+        list-style-type: none;
+        padding-top: 20px;
+    }
+}
+.grijskader{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+.btn-primary{
+    background-color: $clientcolor-1;
+    border: $clientcolor-1;
+    &:hover{
+        background-color: #2E3D83;
+    }
+}
+.rood{
+    background-color: #BC1237;
+    color: white;
+}
+.blauw{
+    background-color: #2E3D83;
+}
+.geel{ 
+    background-color:  #F0DD60;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: white;
+}
+.blauw8{
+    background-color: rgba(46, 62, 131, 0.815);
+    color: white;
+}
+.blauw6{
+    background-color: rgba(46, 62, 131, 0.644);
+    color: white;
+}
+.blauw4{
+    background-color: rgba(46, 62, 131, 0.479);
+    color: white;
+}
+.blauw2{
+    background-color: rgba(46, 62, 131, 0.247);
+    color: white;
+}
+.blauw0{
+    background-color: #FEFEFE;
+}
+.flyer{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.margeonder{
+    margin-bottom: 40px;
+}
+
+//footer
+
+.icons-footer{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.icons-footer>a>img{
+    height: 40px;
+}
+.images-footer>a>img{
+   height: 104px;
+}
+.images-footer{
+    width:10%;
+}
+#artevelde{
+    height: 60px;
+    margin-left:20px;
+    margin-bottom:20px;
+}
+#logo{
+    height: 60px;
+    margin-bottom:20px;
+}
+.center-footer{
+    text-align: center;
 }

@@ -25,7 +25,7 @@ $body-link: $mycolor-5;
 
 
 // Client specific
-$clientcolor-1:rgba(120,250,250,1);
+$clientcolor-1:#2E3D83;
 $clientcolor-2:rgba(120,250,250,1);
 $clientcolor-3:rgba(120,250,250,1);
 $clientcolor-4:rgba(120,250,250,1);
@@ -41,17 +41,18 @@ $clientcolor-5:rgba(250,120,120,1);
 
 // Client specific
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-
+@import url('https://fonts.googleapis.com/css?family=Anton');
 // type
 $myfont-family-base: 'Raleway', serif;
-$myfont-family-title: $myfont-family-base;
+$myfont-family-title: 'Anton';
 
 // sizes
-$font-size-base: 16px;
+$font-size-base: 15px;
 $lineheight-base: 1.6em;
 $font-weight-base: 400;
 $font-weight-light: 200;
 $font-weight-bold: 800;
+
 
 
 // Type Client specific
@@ -59,10 +60,10 @@ $font-weight-bold: 800;
 
 // type
 $clientfont-family-base: 'Raleway', serif;
-$clientfont-family-title: $myfont-family-base;
+$clientfont-family-title: 'Raleway';
 
 // sizes
-$client-font-size-base: 16px;
+$client-font-size-base: 15px;
 $client-lineheight-base: 1.6em;
 $client-font-weight-base: 400;
 $client-font-weight-light: 200;

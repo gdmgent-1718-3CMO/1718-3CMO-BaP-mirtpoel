@@ -30,10 +30,42 @@
  --------------------------- */
  #toc {
     margin-bottom: 1em;
+    position: fixed;
     .nav {
         display: block;
     }
-
  } 
+ nav[data-toggle=toc] .nav>li>a:focus, nav[data-toggle=toc] .nav>li>a:hover{
+     color: $clientcolor-1;
+     border-left: 2px solid $clientcolor-1;
+     font-weight: bold;
+ }
 
- 
+  /* Mirte Aanpassingen
+ --------------------------- */
+
+ /* navbar*/
+ .navigatie {
+    background-color: #2E3D83;
+    margin-bottom: 0%;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+   color: white;
+}
+.navbar-light .navbar-nav .nav-link{
+   color: white;
+}
+.dropdown-menu {
+   background-color: #2E3D83;
+   border: none;
+   color: white;
+   border-radius: 0;
+}
+.dropdown-item{
+   color: white;
+   font-size: 15px;
+}
+.dropdown-item.active, .dropdown-item:active{
+   background-color: $clientcolor-1;
+}
+/*einde navbar*/
